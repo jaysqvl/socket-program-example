@@ -8,7 +8,7 @@ public class UDPClient {
         // prepare data to be sent
         String message = "hello";
         byte[] bufferOut = message.getBytes();
-        InetAddress serverAddress = InetAddress.getByName("localhost");
+        InetAddress serverAddress = InetAddress.getByName("192.168.1.112");
         int serverPort = 7070;
         DatagramPacket packetOut = new DatagramPacket(bufferOut, bufferOut.length, serverAddress, serverPort);
 
