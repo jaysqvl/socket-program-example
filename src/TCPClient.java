@@ -4,7 +4,7 @@ import java.net.*;
 public class TCPClient {
     public static void main(String[] args) throws IOException {
         // establish connection
-        Socket MySocket = new Socket("localhost", 7070);
+        Socket MySocket = new Socket("192.168.1.112", 7070);
 
         // get output and input streams
         OutputStream os = MySocket.getOutputStream();
