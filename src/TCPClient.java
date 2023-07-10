@@ -22,7 +22,7 @@ public class TCPClient {
 
         // receive response
         String response = in.readLine();
-        long end = System.currentTimeMillis();  // End time
+        long end = System.currentTimeMillis();
         long RTT = end - start;
 
         System.out.println(response);
